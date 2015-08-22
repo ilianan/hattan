@@ -1,0 +1,61 @@
+#contact{
+	@extend .padded-container;
+	background-color: $primary-color;
+	padding-top: 120px;
+	padding-bottom: 80px;
+	height: 500px;
+	.one-half{
+		width: 44%;
+		display: inline-block;
+		margin-right: 25px;
+		h4{
+			color: $white;
+			margin-bottom: 18px;
+		}
+		p{
+			line-height: 1.6em;
+		}
+		p.xsmall{
+			color: $white;
+		}
+		form{
+			display: inline-block;
+			input{
+				background-color: $dark-gray;
+				border:none;
+				height: 28px;
+				padding: 10px;
+				width: 43.6%;
+				margin: 8px 5px;
+				color: $smoke;
+			}
+			.block{
+				width: 94.5%;
+			}
+			textarea{
+				background-color: $dark-gray;
+				width: 94.5%;
+				margin-left: 5px;
+				border: none;
+				color: $light-gray;
+				padding: 10px;
+				height: 80px;
+				margin-top: 8px;
+			}
+			button{
+				background-color: transparent;
+				border: 1px solid $smoke;
+				color: $white;
+				padding: 10px 20px;
+				font-size: 0.8em;
+				margin: 15px 0 0 5px;
+			}
+			button:hover{
+				background-color: $white;
+				color: $primary-color;
+			}
+		}	
+	}
+	.colum1{float: left;}
+	.colum2{float: right;}	
+}

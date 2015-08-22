@@ -1,0 +1,41 @@
+header{
+  @extend .padded-container;
+  height: 70px;
+  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: fixed;
+  top:0;
+  background-color: $white;
+  right: 0;
+  left: 0;
+  .logo{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: $primary-color;
+    color: $white;
+    padding: 6px;
+  }
+  nav{
+    line-height: 70px;  
+    display: inline-block;
+    float: right;
+    ul{
+      li{
+        display: inline-block;
+        padding: 0 20px;
+        a{
+          text-decoration: none;
+          font-family: Raleway;
+          text-transform: uppercase;
+          font-size: 0.7em;
+          color: $primary-color;
+        }
+        a:hover{
+          color: $primary-color;
+          font-family: Raleway;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

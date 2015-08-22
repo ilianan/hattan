@@ -1,0 +1,26 @@
+#services{
+	@extend .padded-container;
+	background-color: $smoke;
+	padding-top: 140px;
+	height: 85%;
+	box-sizing:border-box;
+	.one-half{
+		width: 43%;
+		display: inline-block;
+		.services{
+			margin-bottom: 3.5em;
+			h4{
+				margin-bottom: 1.6em;
+			}
+			p.small{
+				line-height: 2.5em;
+			}
+		}
+	}
+	.colum1{
+		float: left;
+	}
+	.colum2{
+		float: right;
+	}
+}

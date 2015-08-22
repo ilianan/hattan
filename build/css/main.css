@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%; }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 200;
+  src: url(../fonts/Raleway/Raleway-Light.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 600;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf); }
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 800;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf); }
+
+html, body, * {
+  font-family: Raleway !important;
+  font-weight: 200;
+  color: #333; }
+  html::selection, body::selection, *::selection {
+    background: #222;
+    color: white; }
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase; }
+  h2.bold {
+    font-weight: 600; }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800; }
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 800; }
+
+h5 {
+  font-size: 0.95em;
+  font-weight: 800; }
+
+p, span {
+  margin-bottom: 1.5em;
+  color: #666;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5em; }
+  p.lead, span.lead {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.3em; }
+  p.small, span.small {
+    font-size: 0.8em;
+    font-weight: 200; }
+  p.xsmall, span.xsmall {
+    font-size: 0.7em;
+    font-weight: 200; }
+
+progress {
+  height: 4px;
+  width: 300px;
+  -webkit-appearance: none;
+  appearance: none; }
+  progress::-webkit-progress-bar {
+    background: #eee; }
+  progress::-webkit-progress-value {
+    background: #222; }
+
+.padded-container, #about, header, #services, #team, #portfolio, #contact {
+  padding: 0 10%;
+  box-sizing: border-box; }
+
+#about {
+  margin: 80px 0; }
+  #about .one-half {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px; }
+    #about .one-half h1 {
+      margin-bottom: 0.5em;
+      line-height: 1.1em; }
+    #about .one-half p {
+      line-height: 2.1em; }
+
+header {
+  height: 70px;
+  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  background-color: #fdfdfd;
+  right: 0;
+  left: 0; }
+  header .logo {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #222;
+    color: #fdfdfd;
+    padding: 6px; }
+  header nav {
+    line-height: 70px;
+    display: inline-block;
+    float: right; }
+    header nav ul li {
+      display: inline-block;
+      padding: 0 20px; }
+      header nav ul li a {
+        text-decoration: none;
+        font-family: Raleway;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        color: #222; }
+      header nav ul li a:hover {
+        color: #222;
+        font-family: Raleway;
+        font-weight: 600; }
+
+.hero-image {
+  background-image: url("../images/background.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .hero-image hgroup {
+    padding-top: 300px;
+    text-align: center; }
+    .hero-image hgroup h3, .hero-image hgroup h1 {
+      text-align: center;
+      color: #fdfdfd;
+      vertical-align: center; }
+    .hero-image hgroup h1 {
+      padding: 15px 40px;
+      border: 1px solid #fdfdfd;
+      display: inline-block;
+      margin-top: 0.6em; }
+    .hero-image hgroup h3 {
+      text-transform: uppercase; }
+
+#services {
+  background-color: #eee;
+  padding-top: 140px;
+  height: 85%;
+  box-sizing: border-box; }
+  #services .one-half {
+    width: 43%;
+    display: inline-block; }
+    #services .one-half .services {
+      margin-bottom: 3.5em; }
+      #services .one-half .services h4 {
+        margin-bottom: 1.6em; }
+      #services .one-half .services p.small {
+        line-height: 2.5em; }
+  #services .colum1 {
+    float: left; }
+  #services .colum2 {
+    float: right; }
+
+#team {
+  margin: 120px 0; }
+  #team p.small {
+    line-height: 2.4em;
+    margin-top: 1.9em; }
+  #team .one-fourth-colum {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top; }
+    #team .one-fourth-colum h5, #team .one-fourth-colum p.xsmall {
+      text-align: center; }
+    #team .one-fourth-colum h5 {
+      margin: 25px 0 13px 0; }
+
+#portfolio {
+  margin: 120px 0 0 0;
+  background-color: #eee;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #portfolio nav {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px; }
+    #portfolio nav ul li {
+      display: inline-block; }
+      #portfolio nav ul li a {
+        text-decoration: none;
+        font-size: 0.8em;
+        color: #222;
+        text-align: center; }
+      #portfolio nav ul li a:hover {
+        font-weight: 600; }
+  #portfolio .one-fourth-colum {
+    width: 24%;
+    display: inline-block;
+    position: relative;
+    height: 278px; }
+    #portfolio .one-fourth-colum img {
+      width: 100%;
+      position: absolute;
+      left: 0; }
+    #portfolio .one-fourth-colum .overlay {
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      vertical-align: bottom;
+      bottom: 0; }
+      #portfolio .one-fourth-colum .overlay h3, #portfolio .one-fourth-colum .overlay p {
+        color: #fdfdfd; }
+    #portfolio .one-fourth-colum:hover .overlay {
+      position: absolute;
+      display: block;
+      background-color: #222;
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0.8;
+      padding: 17px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 80px;
+      margin-top: 0px; }
+
+#contact {
+  background-color: #222;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  height: 500px; }
+  #contact .one-half {
+    width: 44%;
+    display: inline-block;
+    margin-right: 25px; }
+    #contact .one-half h4 {
+      color: #fdfdfd;
+      margin-bottom: 18px; }
+    #contact .one-half p {
+      line-height: 1.6em; }
+    #contact .one-half p.xsmall {
+      color: #fdfdfd; }
+    #contact .one-half form {
+      display: inline-block; }
+      #contact .one-half form input {
+        background-color: #333;
+        border: none;
+        height: 28px;
+        padding: 10px;
+        width: 43.6%;
+        margin: 8px 5px;
+        color: #eee; }
+      #contact .one-half form .block {
+        width: 94.5%; }
+      #contact .one-half form textarea {
+        background-color: #333;
+        width: 94.5%;
+        margin-left: 5px;
+        border: none;
+        color: #aaa;
+        padding: 10px;
+        height: 80px;
+        margin-top: 8px; }
+      #contact .one-half form button {
+        background-color: transparent;
+        border: 1px solid #eee;
+        color: #fdfdfd;
+        padding: 10px 20px;
+        font-size: 0.8em;
+        margin: 15px 0 0 5px; }
+      #contact .one-half form button:hover {
+        background-color: #fdfdfd;
+        color: #222; }
+  #contact .colum1 {
+    float: left; }
+  #contact .colum2 {
+    float: right; }

@@ -1,0 +1,17 @@
+#about{
+  @extend .padded-container;
+  margin: 80px 0;
+  .one-half{
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    h1{
+      margin-bottom: 0.5em;
+      line-height: 1.1em;
+    }
+    p{
+      line-height: 2.1em;
+    }
+  }
+}

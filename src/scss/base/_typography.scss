@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Raleway;
+  font-weight: 200;
+  src: url(../fonts/Raleway/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 400;
+  src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 600;
+  src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  font-weight: 800;
+  src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+
+
+html, body, * {
+  font-family: Raleway !important;
+  font-weight: 200;
+  color: $dark-gray;
+
+  &::selection {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  &.bold {
+    font-weight: 600;  
+  }
+}
+h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h4{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+h5 {
+  font-size: 0.95em;
+  font-weight: 800;
+}
+
+p, span {
+  margin-bottom: 1.5em;
+  color: $gray;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5em;
+
+  &.lead {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+
+  &.small {
+    font-size: 0.8em;
+    font-weight: 200;
+  }
+
+  &.xsmall {
+    font-size: 0.7em;
+    font-weight: 200;
+  }
+}

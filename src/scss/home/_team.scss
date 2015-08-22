@@ -1,0 +1,18 @@
+#team{
+	@extend .padded-container;
+	margin: 120px 0;
+	p.small{
+			line-height: 2.4em;
+			margin-top: 1.9em;
+		}
+	.one-fourth-colum{
+		width: 24%;
+		display: inline-block;
+		vertical-align: top;
+		h5, p.xsmall{
+			text-align: center;
+		}
+		h5{
+			margin: 25px 0 13px 0;}
+	}
+}
