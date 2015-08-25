@@ -131,6 +131,10 @@ progress {
   padding: 0 10%;
   box-sizing: border-box; }
 
+@media screen and (max-width: 1024px) {
+  .padded-container, #about, header, #services, #team, #portfolio, #contact {
+    width: 100%; } }
+
 #about {
   margin: 80px 0; }
   #about .one-half {
@@ -143,6 +147,35 @@ progress {
       line-height: 1.1em; }
     #about .one-half p {
       line-height: 2.1em; }
+
+@media screen and (max-width: 1024px) {
+  #about {
+    width: 100%; } }
+
+@media screen and (min-width: 540) and (max-width: 940px) {
+  #about {
+    display: block;
+    width: 100%; }
+    #about .one-half {
+      width: 100%;
+      display: block; }
+      #about .one-half h2, #about .one-half p {
+        display: block; }
+      #about .one-half img {
+        width: 100%;
+        height: 100%; } }
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  #about {
+    display: block; }
+    #about .one-half {
+      width: 100%;
+      display: block; }
+      #about .one-half h2, #about .one-half p {
+        display: block; }
+      #about .one-half img {
+        width: 100%;
+        height: 100%; } }
 
 header {
   height: 70px;
@@ -162,7 +195,8 @@ header {
   header nav {
     line-height: 70px;
     display: inline-block;
-    float: right; }
+    position: absolute;
+    right: 130px; }
     header nav ul li {
       display: inline-block;
       padding: 0 20px; }
@@ -176,6 +210,30 @@ header {
         color: #222;
         font-family: Raleway;
         font-weight: 600; }
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%; } }
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  header .logo {
+    opacity: 0; }
+  header nav.nav-button {
+    width: 580px;
+    position: absolute;
+    right: -190px; }
+    header nav.nav-button ul li {
+      padding: 7px; } }
+
+@media screen and (min-width: 540px) and (max-width: 800px) {
+  header .logo {
+    opacity: 0; }
+  header nav.nav-button {
+    width: 580px;
+    position: absolute;
+    right: 20px; }
+    header nav.nav-button ul li {
+      padding: 20px; } }
 
 .hero-image {
   background-image: url("../images/background.jpg");
@@ -199,10 +257,17 @@ header {
     .hero-image hgroup h3 {
       text-transform: uppercase; }
 
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    width: 100%; }
+    .hero-image hgroup {
+      width: 100%; } }
+
 #services {
   background-color: #eee;
   padding-top: 140px;
-  height: 85%;
+  padding-bottom: 30px;
+  height: 100%;
   box-sizing: border-box; }
   #services .one-half {
     width: 43%;
@@ -218,6 +283,17 @@ header {
   #services .colum2 {
     float: right; }
 
+@media screen and (max-width: 1024px) {
+  #services {
+    width: 100%; } }
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+  #services {
+    height: 1100px; }
+    #services .one-half {
+      width: 100%;
+      display: block; } }
+
 #team {
   margin: 120px 0; }
   #team p.small {
@@ -231,6 +307,20 @@ header {
       text-align: center; }
     #team .one-fourth-colum h5 {
       margin: 25px 0 13px 0; }
+    #team .one-fourth-colum img {
+      max-width: 100%; }
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  #team .one-fourth-colum {
+    padding-right: 8px;
+    box-sizing: border-box; } }
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  #team .one-fourth-colum {
+    width: 100%; }
+    #team .one-fourth-colum img {
+      display: block;
+      margin: auto; } }
 
 #portfolio {
   margin: 120px 0 0 0;
@@ -279,15 +369,48 @@ header {
       height: 80px;
       margin-top: 0px; }
 
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+  #portfolio .one-fourth-colum {
+    width: 32%;
+    display: inline-block;
+    position: relative; }
+    #portfolio .one-fourth-colum img {
+      display: inline-block;
+      margin: auto;
+      height: 278px;
+      width: 100%; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  #portfolio .one-fourth-colum {
+    width: 49%;
+    display: inline-block;
+    position: relative; }
+    #portfolio .one-fourth-colum img {
+      display: inline-block;
+      margin: auto;
+      height: 278px;
+      width: 100%; } }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  #portfolio .one-fourth-colum {
+    width: 100%;
+    position: relative; }
+    #portfolio .one-fourth-colum img {
+      display: block;
+      margin: auto;
+      height: 278px;
+      width: 100%; } }
+
 #contact {
   background-color: #222;
   padding-top: 120px;
   padding-bottom: 80px;
-  height: 500px; }
+  height: 100%; }
   #contact .one-half {
-    width: 44%;
+    width: 40%;
     display: inline-block;
-    margin-right: 25px; }
+    margin-right: 29px;
+    vertical-align: top; }
     #contact .one-half h4 {
       color: #fdfdfd;
       margin-bottom: 18px; }
@@ -302,7 +425,7 @@ header {
         border: none;
         height: 28px;
         padding: 10px;
-        width: 43.6%;
+        width: 42.6%;
         margin: 8px 5px;
         color: #eee; }
       #contact .one-half form .block {
@@ -330,3 +453,7 @@ header {
     float: left; }
   #contact .colum2 {
     float: right; }
+
+@media screen and (max-width: 1024px) {
+  #contact {
+    width: 100%; } }

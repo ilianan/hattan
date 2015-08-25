@@ -18,7 +18,8 @@ header{
   nav{
     line-height: 70px;  
     display: inline-block;
-    float: right;
+    position: absolute;
+    right: 130px;
     ul{
       li{
         display: inline-block;
@@ -36,6 +37,41 @@ header{
           font-weight: 600;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  header{
+  width: 100%;}
+}
+@media screen and (min-width:320px) and (max-width: 540px){
+  header{
+    .logo{opacity: 0;}
+    nav.nav-button{
+      width: 580px;
+      position: absolute;
+      right: -190px;
+      ul{
+        li{
+          padding: 7px;
+        }
+      }
+
+    }
+  }
+}@media screen and (min-width:540px) and (max-width: 800px){
+  header{
+    .logo{opacity: 0;}
+    nav.nav-button{
+      width: 580px;
+      position: absolute;
+      right: 20px;
+      ul{
+        li{
+          padding: 20px;
+        }
+      }
+
     }
   }
 }

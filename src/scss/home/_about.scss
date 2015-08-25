@@ -15,3 +15,41 @@
     }
   }
 }
+@media screen and (max-width: 1024px){
+  #about{
+    width: 100%;
+  }
+}
+@media screen and (min-width:540) and (max-width: 940px) {
+  #about{
+    display: block;
+    width: 100%;
+    .one-half{
+      width: 100%;
+      display: block;
+      h2, p{
+        display: block;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width:320px) and (max-width: 540px){
+  #about{
+    display: block;
+    .one-half{
+      width: 100%;
+      display: block;
+      h2, p{
+        display: block;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }  
+}

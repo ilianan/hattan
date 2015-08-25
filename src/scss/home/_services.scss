@@ -2,7 +2,8 @@
 	@extend .padded-container;
 	background-color: $smoke;
 	padding-top: 140px;
-	height: 85%;
+	padding-bottom: 30px;
+	height: 100%;
 	box-sizing:border-box;
 	.one-half{
 		width: 43%;
@@ -24,3 +25,16 @@
 		float: right;
 	}
 }
+@media screen and (max-width: 1024px) {
+	#services{
+	width: 100%;}
+}
+@media screen and (min-width:320px) and (max-width: 620px){
+ 	#services{
+ 		height: 1100px;
+ 		.one-half{
+ 			width: 100%;
+ 			display: block;
+ 		}
+ 	}
+ }

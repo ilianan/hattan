@@ -3,11 +3,12 @@
 	background-color: $primary-color;
 	padding-top: 120px;
 	padding-bottom: 80px;
-	height: 500px;
+	height: 100%;
 	.one-half{
-		width: 44%;
+		width: 40%;
 		display: inline-block;
-		margin-right: 25px;
+		margin-right: 29px;
+		vertical-align: top;
 		h4{
 			color: $white;
 			margin-bottom: 18px;
@@ -25,7 +26,7 @@
 				border:none;
 				height: 28px;
 				padding: 10px;
-				width: 43.6%;
+				width: 42.6%;
 				margin: 8px 5px;
 				color: $smoke;
 			}
@@ -57,5 +58,11 @@
 		}	
 	}
 	.colum1{float: left;}
-	.colum2{float: right;}	
+	.colum2{float: right;}
 }
+@media screen and (max-width: 1024px) {
+	#contact{
+	width: 100%;}
+}
+
+
